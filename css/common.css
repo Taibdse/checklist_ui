@@ -1,0 +1,262 @@
+:root {
+  --done-color: #0bb827;
+  --in-progress-color: #0b65b8;
+  --overdue-color: #b85e0b;
+  --not-started-color: black;
+}
+
+.done-color {
+  color: var(--done-color);
+}
+
+.done-bg {
+  background-color: var(--done-color);
+  background-image: none;
+}
+
+.in-progress-color {
+  color: var(--in-progress-color);
+}
+
+.in-progress-bg {
+  background-color: var(--in-progress-color);
+  background-image: none;
+}
+
+.overdue-color {
+  color: var(--overdue-color);
+}
+
+.overdue-bg {
+  background-color: var(--overdue-color);
+  background-image: none;
+}
+
+.not-started-color {
+  color: var(--not-started-color);
+}
+
+.not-started-bg {
+  background-color: var(--not-started-color);
+  background-image: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: #f9f4f4;
+  color: black;
+  transition: all 0.3s;
+}
+
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+  color: inherit;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: #f9f4f4;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.6em;
+  display: block;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+#sidebar ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+#sidebar ul li.active a {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#content {
+  padding: 10px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  width: 100%;
+  background-color: #f9f4f4;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
+
+.primary-color {
+  color: #797575;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}
+
+.page-heading {
+  font-weight: lighter;
+  color: #0982a8;
+  font-size: 6em;
+}
+
+.statistic-block {
+  text-align: center;
+}
+
+.statistic-block .number {
+  font-size: 7em;
+}
+
+.statistic-block .label {
+  font-size: 2em;
+  margin-top: 25px;
+  color: black;
+  font-weight: lighter;
+}
+
+.nav > li > a {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+
+.table {
+  font-size: 1.4em;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.mt-1 {
+  margin-top: 5px;
+}
+
+.mt-2 {
+  margin-top: 10px;
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.mt-5 {
+  margin-top: 25px;
+}
+
+.custom-form .form-group {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.custom-form .form-control {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding-left: 0;
+  padding-right: 0;
+  height: 30px;
+  text-indent: 5px;
+}
+
+.custom-form textarea.form-control {
+  height: auto;
+}
+
+.custom-form .form-group label {
+  font-size: 1.4em;
+  text-align: left;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 10px;
+}
+
+.custom-form .help-block {
+  font-size: 1.2em;
+}
+
+.custom-form .form-field {
+  width: 100%;
+  padding: 5px;
+}
+
+.custom-form .form-group .required-sign {
+  color: #0982a8;
+}
+
+.custom-form .btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.project-member-area {
+  text-align: center;
+}
+.project-member-area .project-member-block {
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 100px;
+  margin: auto;
+}
+
+.project-member-area .project-member-full-name {
+  font-size: 2.5em;
+  margin-top: 15px;
+}
+
+.workload-status-area {
+}

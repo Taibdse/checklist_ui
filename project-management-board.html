@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Board</title>
+  <link rel="stylesheet" href="./css/ACV.Portal.Bundle.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <!-- <h3>Bootstrap Sidebar</h3> -->
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#">Project Board</a>
+        </li>
+        <li>
+          <a href="#">My Projects</a>
+        </li>
+        <li>
+          <a href="#">Shared Projects</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="container-fluid">
+        <h1 class="page-heading">Overview</h1>
+
+        <div class="row mb-5">
+          <div class="col-sm-3">
+            <div class="statistic-block">
+              <div class="number text-black">30</div>
+              <div class="label">Not Started</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="statistic-block">
+              <div class="number text-red">10</div>
+              <div class="label">Overdue</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="statistic-block">
+              <div class="number text-blue">45</div>
+              <div class="label">In-Progress</div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="statistic-block">
+              <div class="number text-green">11</div>
+              <div class="label">Done</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" style="margin-top: 70px;">
+          <ul class="nav nav-tabs custom-nav">
+            <li role="presentation" class="active"><a href="#">In-Progress</a></li>
+            <li role="presentation"><a href="#">Not Started</a></li>
+            <li role="presentation"><a href="#">Overdue</a></li>
+          </ul>
+          <div class="card card-body">
+            <table class="table table-striped">
+              <thead>
+                <th>#</th>
+                <th>Project Title</th>
+                <th>Department</th>
+                <th>Project Code</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Managers</th>
+                <th>Members</th>
+                <th>% Completed</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>51</td>
+                  <td>
+                    <a href="">Kiem tra du lieu Microsoft Active Directory</a>
+                  </td>
+                  <td>
+                    ID Dept
+                  </td>
+                  <td>
+                    <a href="">ACV_IT_00003</a>
+                  </td>
+                  <td>
+                    14-01-2019
+                  </td>
+                  <td>
+                    18-02-2019
+                  </td>
+                  <td>
+                    <a href="">Dien</a>, <a href="">Ho Doan</a>
+                  </td>
+                  <td>
+                    <a href="">Tuyen</a>, <a href="">Manh Hue</a>, <a href="">Khang</a>, <a href="">Vo Huy</a>
+                  </td>
+                  <td>
+                    19%
+                  </td>
+                  <td>
+                    In-Progress
+                  </td>
+                </tr>
+                <tr>
+                  <td>52</td>
+                  <td>
+                    <a href="">Kiem tra du lieu Microsoft Active Directory</a>
+                  </td>
+                  <td>
+                    ID Dept
+                  </td>
+                  <td>
+                    <a href="">ACV_IT_00003</a>
+                  </td>
+                  <td>
+                    14-01-2019
+                  </td>
+                  <td>
+                    18-02-2019
+                  </td>
+                  <td>
+                    <a href="">Dien</a>, <a href="">Ho Doan</a>
+                  </td>
+                  <td>
+                    <a href="">Tuyen</a>, <a href="">Manh Hue</a>, <a href="">Khang</a>, <a href="">Vo Huy</a>
+                  </td>
+                  <td>
+                    19%
+                  </td>
+                  <td>
+                    In-Progress
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./js/ACV.Portal.Bundle.min.js"></script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
