@@ -3,6 +3,7 @@
   --in-progress-color: #0b65b8;
   --overdue-color: #b85e0b;
   --not-started-color: black;
+  --primary-color: #797575;
 }
 
 .done-color {
@@ -107,15 +108,21 @@
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -250px;
+    /* position: fixed;
+    left: -250px;
+    top: 0;
+    z-index: 1000;
+    min-height: 100vh; */
   }
 
   #sidebar.active {
     margin-left: 0;
+    /* left: 0; */
   }
 }
 
 .primary-color {
-  color: #797575;
+  color: var(--primary-color);
 }
 
 .text-black {
@@ -216,9 +223,9 @@
 .custom-form .form-group label {
   font-size: 1.4em;
   text-align: left;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  margin-top: 10px;
+  /* margin-left: 0 !important;
+  margin-right: 0 !important; */
+  margin-top: 5px;
 }
 
 .custom-form .help-block {
@@ -258,5 +265,230 @@
   margin-top: 15px;
 }
 
+.workload-block {
+  background-color: #fff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+
+.work-load-item .name {
+  font-size: 1.4em;
+}
+.work-load-item .progress-bar {
+  color: #fff;
+  font-size: 1.2em;
+}
+
 .workload-status-area {
+  margin-top: 15px;
+}
+.workload-status-area .workload-status-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.workload-status-area .square {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  border-radius: 2px;
+}
+
+.workload-status-area .status {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task-chart-block {
+  background-color: #fff;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-right: 10px;
+}
+
+.task-details-area .task-detail-item {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.task-details-area .task-detail-item .field {
+  color: var(--primary-color);
+}
+
+.task-details-area .task-detail-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-details-area .task-detail-item ul li {
+  margin-bottom: 10px;
+}
+
+.task-detail-section-heading {
+  color: #822323;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+ul.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.activity-list li.activity-item {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+ul.activity-list .user,
+ul.activity-list .status,
+ul.activity-list .date {
+  font-weight: bold;
+}
+
+/*==================================================
+  Post Contents CSS
+  ==================================================*/
+
+.post-content {
+  background: #f8f8f8;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #f1f2f2;
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.post-content img.post-image,
+video.post-video,
+.google-maps {
+  width: 100%;
+  height: auto;
+}
+
+.post-content .google-maps .map {
+  height: 300px;
+}
+
+.post-content .post-container {
+  padding: 20px;
+}
+
+.post-content .post-container .post-detail {
+  margin-left: 65px;
+  position: relative;
+}
+
+.post-content .post-container .post-detail .post-text {
+  line-height: 24px;
+  margin: 0;
+}
+
+.post-content .post-container .post-detail .reaction {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.post-content .post-container .post-detail .post-comment {
+  display: inline-flex;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.post-content .post-container .post-detail .post-comment img.profile-photo-sm {
+  margin-right: 10px;
+}
+
+.post-content .post-container .post-detail .post-comment .form-control {
+  height: 30px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin: 7px 0;
+  min-width: 0;
+}
+
+img.profile-photo-md {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+img.profile-photo-sm {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.text-green {
+  color: #8dc63f;
+}
+
+.text-red {
+  color: #ef4136;
+}
+
+.following {
+  color: #8dc63f;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.task-status {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.task-status .status-name {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.task-status .status-bar {
+  height: 20px;
+  border-radius: 10px;
+}
+
+.rounded-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 30px;
+  border: 1px solid #ccc;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.md-font-size {
+  font-size: 1.4em;
+}
+
+.task-level .task-card {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0px 7px 5px 0px #debee4;
+  /* margin-right: 10px; */
+  /* margin-left: 10px; */
+}
+
+.task-level {
+  margin-bottom: 40px;
+}
+
+.task-level .col-sm-4 {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+  /* padding-bottom: 10px; */
+}
+
+.task-level .task-card {
+  margin-bottom: 20px;
 }

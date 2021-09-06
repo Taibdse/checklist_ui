@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Home</title>
+  <link rel="stylesheet" href="./css/ACV.Portal.Bundle.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <!-- <h3>Bootstrap Sidebar</h3> -->
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Tasks</a>
+        </li>
+        <li>
+          <a href="#">Meeting Calendars</a>
+        </li>
+        <li>
+          <a href="#">Files</a>
+        </li>
+        <li>
+          <a href="#">Wiki</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <button type="button" id="sidebarCollapse" class="btn btn-secondary">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="container-fluid">
+        <h1 class="page-heading">Overview</h1>
+
+        <div class="row mb-5">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-2">
+            <div class="statistic-block">
+              <div class="number text-black">25</div>
+              <div class="label">Not Started</div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="statistic-block">
+              <div class="number" style="color: #B85E0B;">11</div>
+              <div class="label">Overdue</div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="statistic-block">
+              <div class="number text-blue">9</div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="statistic-block text-green">
+              <div class="number">16</div>
+              <div class="label">Done</div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="statistic-block" style="color: blueviolet;">
+              <div class="number">2.5</div>
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-sm-5">
+            <div class="task-chart-block">
+              <h4 class="primary-color">Tasks</h4>
+              <canvas id="tasksChart"></canvas>
+            </div>
+          </div>
+          <div class="col-sm-7" style="padding-left: 10px">
+            <div class="workload-block">
+              <h4 class="primary-color work-load-title">Workload</h4>
+              <div class="work-load-item">
+                <div class="row">
+                  <div class="col-sm-4 px-0">
+                    <span class="name">Thuong, Tran Cong</span>
+                  </div>
+                  <div class="col-sm-8 px-0">
+                    <div class="progress">
+                      <div class="progress-bar in-progress-bg" style="width: 21.74%">
+                        <!-- <span class="sr-only">5</span> -->
+                        5
+                      </div>
+                      <div class="progress-bar done-bg" style="width: 65.22%">
+                        <!-- <span class="sr-only">15</span> -->
+                        15
+                      </div>
+                      <div class="progress-bar overdue-bg" style="width: 13.04%">
+                        <!-- <span class="sr-only">3</span> -->
+                        3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-load-item">
+                <div class="row">
+                  <div class="col-sm-4 px-0">
+                    <span class="name">Thanh, Nguyen Tran Thuy</span>
+                  </div>
+                  <div class="col-sm-8 px-0">
+                    <div class="progress">
+                      <div class="progress-bar in-progress-bg" style="width: 86.96%">
+                        <!-- <span class="sr-only">20</span> -->
+                        20
+                      </div>
+                      <div class="progress-bar done-bg" style="width: 13.04%">
+                        <!-- <span class="sr-only">3</span> -->
+                        3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="work-load-item">
+                <div class="row">
+                  <div class="col-sm-4 px-0">
+                    <span class="name">Le, Nguyen Thi</span>
+                  </div>
+                  <div class="col-sm-8 px-0">
+                    <div class="progress">
+                      <div class="progress-bar done-bg" style="width: 100%">
+                        <!-- <span class="sr-only">23</span> -->
+                        23
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="workload-status-area">
+                <div class="workload-status-item">
+                  <span class="square in-progress-bg"></span>
+                  <span class="status in-progress-color">In-Progress</span>
+                </div>
+                <div class="workload-status-item">
+                  <span class="square done-bg"></span>
+                  <span class="status done-color">Done</span>
+                </div>
+                <div class="workload-status-item">
+                  <span class="square overdue-bg"></span>
+                  <span class="status overdue-color">Overdue</span>
+                </div>
+                <div class="workload-status-item">
+                  <span class="square not-started-bg"></span>
+                  <span class="status not-started-color">Not Started</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" style="margin-top: 70px;">
+          <h2 class="primary-color">Project Members</h2>
+          <h3 class="primary-color">Managers</h3>
+          <div class="row">
+            <div class="col-12">
+              <div class="project-member-area">
+                <div class="project-member-block" style="background: #06B6AB">
+                  <div class="name">TTC</div>
+                </div>
+                <div class="project-member-full-name">Thuong, Tran Cong</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="primary-color">Members</h3>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="project-member-area">
+                <div class="project-member-block" style="background: violet">
+                  <div class="name">TNTT</div>
+                </div>
+                <div class="project-member-full-name">Thanh, Nguyen Tran Thuy</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="project-member-area">
+                <div class="project-member-block" style="background: green">
+                  <div class="name">LNT</div>
+                </div>
+                <div class="project-member-full-name">Le, Nguyen Thi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./js/ACV.Portal.Bundle.min.js"></script>
+
+  <script src="./js/main.js"></script>
+
+  <script>
+    var ctx = document.getElementById('tasksChart').getContext('2d');
+
+    const data = {
+      labels: [
+        'Red',
+        'Blue',
+        'Yellow'
+      ],
+      datasets: [{
+        label: 'My First Dataset',
+        data: [300, 50, 100],
+        backgroundColor: [
+          'rgb(255, 99, 132)',
+          'rgb(54, 162, 235)',
+          'rgb(255, 205, 86)'
+        ],
+        hoverOffset: 4
+      }]
+    };
+
+    var tasksChart = new Chart(ctx, {
+      type: 'pie',
+      data: data,
+    });
+  </script>
+</body>
+
+</html>
