@@ -475,15 +475,13 @@ img.profile-photo-sm {
   background-color: #fff;
   padding: 10px;
   box-shadow: 0px 7px 5px 0px #debee4;
-  /* margin-right: 10px; */
-  /* margin-left: 10px; */
 }
 
 .task-level {
   margin-bottom: 40px;
 }
 
-.task-level .col-sm-4 {
+.task-level .task-card-wrapper {
   padding-right: 5px !important;
   padding-left: 5px !important;
   /* padding-bottom: 10px; */
